@@ -1,0 +1,149 @@
+body {
+  background-color: #8D8D8D;
+  box-sizing: border-box;
+  font-size: 100%;
+  font-family: Roboto, Verdana, sans-serif;
+}
+
+.add-form {
+  max-width: 540px;
+  height: 100px;
+  margin: 56px auto 90px;
+  padding-top: 31px;
+  padding-left: 42px;
+  padding-right: 42px;
+  box-sizing: border-box;
+
+  background: #EBEBEB;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 6px;
+}
+
+input {
+  margin-bottom: 12px;
+  height: 31px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  border: none;
+}
+
+input:invalid {
+  border: 1px solid red;
+}
+
+.add-button {
+  align-self: center;
+  width: 200px;
+  height: 36px;
+  margin-top: 29px;
+  border: none;
+  background: #DEDCDC;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  font-size: 13pt;
+}
+
+.images-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  box-sizing: border-box;
+  position: relative;
+  height: 210px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 80px;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+}
+
+.close {
+  position: absolute;
+  border-radius: 50%;
+  right: -20px;
+  top: -20px;
+  height: 39px;
+  width: 39px;
+  background: #bdbdbd;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.close:before, .close:after {
+  position: absolute;
+  left: 18px;
+  top: 3px;
+  content: ' ';
+  height: 33px;
+  width: 3px;
+  background-color: #8D8D8D;
+  }
+
+.close:before {
+  transform: rotate(45deg);
+  }
+
+.close:after {
+  transform: rotate(-45deg);
+  }
+
+.close:hover {
+  background: #EBEBEB;
+}
+
+.image img {
+  height: 100%;
+}
+
+.title {
+  font-size: 90%;
+  color: #ebebeb;
+  margin-top: 4px;
+}
+
+
+
+
+
+
+.file-container {
+  width: 200px; height: 20px;
+  margin: 10px auto 0;
+  position: relative;
+  
+}
+
+.overlapped {
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0; margin: 0;
+  opacity: 0;
+  width: 100%;
+}
+
+.overlap {
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0; margin: 0;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.outline {
+  outline: 5px dashed rgb(153, 210, 140); 
+  outline-offset: -20px; 
+}
+
+/*# sourceMappingURL=main.css.map*/
